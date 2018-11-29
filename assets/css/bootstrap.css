@@ -1,5 +1,6 @@
 html, body {
-    height: 100%;
+	height: 100%;
+	width: 100%;
     margin: 0;
 }
 
@@ -39,6 +40,7 @@ a {
 
 .navbar {
 	flex-grow: 1;
+	padding: 0;
 }
 
 .header-title {
@@ -63,6 +65,7 @@ h2 {
 
 .container--header {
 	width: 100%;
+	padding: 0px;
 }
 
 .header-col {
@@ -84,10 +87,45 @@ h2 {
 footer {
     border-top: #4aaaa5 5px solid;
     background-color: #666;
-    height:25px;
+    height:50px;
     text-align: center;
     color: #ffffff;
     position: fixed;
     bottom: 0;
+	width: 100%;
+	margin: 0;
+}
+
+.imageA {
+    background-image:url(https://via.placeholder.com/250x500);
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.imageContainer .caption {
+    position: absolute;
+    bottom: 8px;
     width: 100%;
+    text-align: center;
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+.imageContainer .caption span {
+    padding: 8px;
+    display: inline-block;
+}
+
+.button {
+	background-color: #ffffff; 
+	margin-bottom: 10px;
 }
